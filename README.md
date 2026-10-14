@@ -1,8 +1,9 @@
 # Spike-sorting errors vs. decoding (NLB MC_Maze)
 
-I wanted to see how different kinds of spike-sorting errors affect a decoder that was trained on clean data. Short answer: errors that mix up *which* neuron a unit is (label swaps, merges) hurt much more than errors that just remove or add spikes. Swapping labels for 25% of units dropped R² from 0.70 to 0.34 even though no spikes were lost, which is worse than deleting half the units (0.40). Splits barely mattered.
+I wanted to see how different kinds of spike-sorting errors affect a decoder that was trained on clean data. Short answer: errors that mix up which neuron a unit is (label swaps, merges) hurt much more than errors that just remove or add spikes. Swapping labels for 25% of units dropped R² from 0.70 to 0.34 even though no spikes were lost, which is worse than deleting half the units (0.40). Splits barely mattered.
 
-![results](sorting_errors.png)
+<img width="690" height="440" alt="image" src="https://github.com/user-attachments/assets/f4cae5cc-9e21-49ed-82e0-25b6c27d04c7" />
+
 
 (mean ± SD over 5 random seeds)
 
