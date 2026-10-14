@@ -1,0 +1,7 @@
+torch
+scikit-learn
+matplotlib
+pandas
+tqdm
+dandi
+torch_brain @ git+https://github.com/neuro-galaxy/torch_brain
